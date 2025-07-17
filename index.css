@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "PlayfairDisplay-Italic-VariableFont_wght";
+  src: url("./assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "PlayfairDisplay-Italic-VariableFont_wght", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "PlayfairDisplay-Italic-VariableFont_wght", serif;
+}
+
+/* Apply font to all elements */
+* {
+  font-family: "PlayfairDisplay-Italic-VariableFont_wght", serif;
+}
+
+/* Custom styles for better spacing */
+.space-y-2 > * + * {
+  margin-top: 0.5rem;
+}
+
+.space-y-4 > * + * {
+  margin-top: 1rem;
+}
+
+.space-y-6 > * + * {
+  margin-top: 1.5rem;
+}
+
+/* Grid utilities */
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+/* Responsive utilities */
+@media (min-width: 1024px) {
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:order-first {
+    order: -9999;
+  }
+}
+
+/* Text colors */
+.text-gray-500 {
+  color: rgb(107 114 128);
+}
+
+.text-red-500 {
+  color: rgb(239 68 68);
+}
+
+.text-green-600 {
+  color: rgb(22 163 74);
+}
+
+.text-indigo-600 {
+  color: rgb(79 70 229);
+}
+
+.text-white {
+  color: rgb(255 255 255);
+}
+
+/* Background colors */
+.bg-white {
+  background-color: rgb(255 255 255);
+}
+
+.bg-indigo-600 {
+  background-color: rgb(79 70 229);
+}
+
+.bg-green-100 {
+  background-color: rgb(220 252 231);
+}
+
+.bg-gray-50 {
+  background-color: rgb(249 250 251);
+}
+
+/* Border colors */
+.border-red-500 {
+  border-color: rgb(239 68 68);
+}
+
+.border-gray-300 {
+  border-color: rgb(209 213 219);
+}
+
+.border-input {
+  border-color: hsl(214.3 31.8% 91.4%);
+}
+
+/* Hover effects */
+.hover\:bg-indigo-700:hover {
+  background-color: rgb(67 56 202);
+}
+
+.hover\:bg-gray-50:hover {
+  background-color: rgb(249 250 251);
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
+/* Focus effects */
+.focus\:border-indigo-500:focus {
+  border-color: rgb(99 102 241);
+}
+
+.focus-visible\:outline-none:focus-visible {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+/* Animation */
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
